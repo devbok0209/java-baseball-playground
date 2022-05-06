@@ -48,11 +48,6 @@ public class Calculator {
     public int multiply(int calculatedValue, int multiplyValue) {
         return calculatedValue * multiplyValue;
     }
-
-    public static void main(String[] args) {
-        Calculator calculator = new Calculator();
-        System.out.println(calculator.calculate("2 * 100 / 10 / 2"));
-    }
 }
 
 
