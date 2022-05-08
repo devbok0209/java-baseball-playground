@@ -9,7 +9,6 @@ import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.HashSet;
-import java.util.Scanner;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
