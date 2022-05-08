@@ -7,7 +7,7 @@ public class Run {
 
     public static void main(String[] args) {
         InputView inputView = new InputView();
-        inputView.mainMenu();
+        inputView.startGame();
     }
 
 }
