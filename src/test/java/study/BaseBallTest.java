@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class BaseBallTest {
 
-    @ParameterizedTest
+    @ParameterizedTest(name = "3STRIKE {index}: ANSWER : {0} : COM : {1}")
     @DisplayName("숫자를 맞췄을때 힌트가 없어야하는 테스트")
     @CsvSource(value = {"123:123", "234:234", "455:455", "657:657"}, delimiter = ':')
     void shouldNotExistHint(String answer, String result) {
