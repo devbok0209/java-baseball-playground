@@ -18,7 +18,7 @@ public class BaseBall {
         checkAnswer(answer);
     }
 
-    private void checkAnswer(String answer) {
+    public void checkAnswer(String answer) {
         while (true) {
             System.out.print("숫자를 입력해 주세요 : ");
             String result = scanner.nextLine();
@@ -49,7 +49,7 @@ public class BaseBall {
         }
     }
 
-    private boolean isCorrect(String answer, String result) {
+    public boolean isCorrect(String answer, String result) {
         if(result.equals(answer)) {
             System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임 종료");
             hint.hintValueClear();
@@ -58,15 +58,15 @@ public class BaseBall {
         return false;
     }
 
-    private boolean isBall(String answer, String resultValue) {
+    public boolean isBall(String answer, String resultValue) {
         return answer.contains(resultValue);
     }
 
-    private boolean isStrike(String resultValue, String answerValue) {
+    public boolean isStrike(String resultValue, String answerValue) {
         return resultValue.equals(answerValue);
     }
 
-    private String createAnswer() {
+    public String createAnswer() {
         int max = 1000;
         int min = 100;
         final Random random = new SecureRandom();
