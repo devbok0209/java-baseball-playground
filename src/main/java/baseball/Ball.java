@@ -2,18 +2,12 @@ package baseball;
 
 public class Ball {
 
-    public static final int MIN = 1;
-    public static final int MAX = 9;
     private final int place;
     private final int number;
 
     public Ball(int place, int number) {
         this.place = place;
-        this.number = number;
-    }
-
-    public boolean validNumber()  {
-        return this.number >= MIN && this.number <= MAX;
+        this.number = new BallNumber(number).getNumber();
     }
 
     public BallStatus play(Ball ball) {
